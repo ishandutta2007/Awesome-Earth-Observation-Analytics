@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square&logo=github" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square&logo=github" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square" alt="GitHub issues"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square" alt="License"/></a>
@@ -64,9 +64,9 @@ Commercial Earth Observation platforms categorized by corporate scale (revenue/v
 
 ## 🔓 Open-Source GitHub Projects
 
-Sorted by **GitHub Star Count** (Descending). Click on the star badge beside any repository to inspect its stargazers.
+Sorted by **GitHub Stars_Count** (Descending). Click on the Stars_Badge beside any repository to inspect its stargazers.
 
-| Repository | Stars | Description | Focus Area |
+| Repository | GitHub_Stars | Description | Focus Area |
 | :--- | :---: | :--- | :--- |
 | **[eolearn](https://github.com/sentinel-hub/eo-learn)** 🐍 | [<img src="https://img.shields.io/github/stars/sentinel-hub/eo-learn?style=social&color=white" alt="eolearn stars"/>](https://github.com/sentinel-hub/eo-learn/stargazers) | Earth observation processing framework for machine learning in Python using Sentinel-Hub. | Data Processing & ML |
 | **[rasterio](https://github.com/rasterio/rasterio)** 🗺️ | [<img src="https://img.shields.io/github/stars/rasterio/rasterio?style=social&color=white" alt="rasterio stars"/>](https://github.com/rasterio/rasterio/stargazers) | Fast geospatial raster I/O library for Python built on top of GDAL binaries. | Raster I/O & GIS |
@@ -107,7 +107,7 @@ Contributions are welcome and appreciated! Follow these steps to submit a additi
 
 1. Fork this repository.
 2. Edit `README.md` or `README_zh.md` following the table formatting.
-3. Ensure entries include explicit links, factual details, star counts, and clear descriptions.
+3. Ensure entries include explicit links, factual details, Stars_Counts, and clear descriptions.
 4. Submit a Pull Request with a brief summary of your updates.
 
 ---
