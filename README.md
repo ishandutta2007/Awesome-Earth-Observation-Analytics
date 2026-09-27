@@ -1,215 +1,142 @@
-# Awesome-Earth-Observation-Analytics
-
-# 顶级地球观测分析平台生态系统
-
-
-
-**精选 SaaS 产品与开源 GitHub 项目列表**
-
-*聚焦卫星图像分析、变化检测、植被监测与环境智能*
-
-**最后更新：2026 年 9 月**
-
-
-
-本仓库追踪**地球观测分析**领域的知名 **SaaS 平台**与**开源项目**。这些工具帮助分析师、研究人员和企业从卫星图像中提取可操作洞察——监测植被健康、检测环境变化、评估灾害影响，并支持数据驱动的决策。
-
-
-
-**示例**包括 UP42、Descartes Labs、Orbital Insight、Picterra、EOS Data Analytics、Satellogic Insights、SkyWatch、Planet Insights、SpaceKnow 和 EarthDaily Analytics（该领域的领先者）。
-
-
-
-**开源重点**：地球观测领域拥有**极其丰富的开源生态**——这得益于 ESA 哥白尼计划的免费开放数据政策。与许多企业软件类别不同，开源工具不仅存在，而且在灵活性和数据主权方面往往优于商业产品。本列表重点收录**可自托管的处理引擎**、**变化检测框架**和**数据立方体工具**——适合需要完全掌控分析流程的研究团队和开发者。
-
-
-
-欢迎贡献！提交 PR 以添加/更新条目。保持描述事实性，并链接到官方网站。
-
-
-
-## 目录
-
-
-
-- [SaaS/托管平台](#saas托管平台)
-
-- [开源 GitHub 项目](#开源github项目)
-
-- [如何贡献](#如何贡献)
-
-- [免责声明](#免责声明)
-
-
-
-## SaaS/托管平台
-
-
-
-- **[UP42](https://up42.com/)**
-
-  地球观测数据平台和市场。提供来自多个供应商的卫星和航空影像访问，以及用于处理和分析的 API。支持快速原型设计和生产级工作流。
-
-
-
-- **[Descartes Labs](https://descarteslabs.com/)**
-
-  地理空间分析平台，结合卫星影像与机器学习，应用于农业、林业和环境监测。
-
-
-
-- **[Orbital Insight](https://orbitalinsight.com/)**
-
-  地理空间分析平台，使用 AI 大规模分析卫星和航空影像。专注于经济活动监测、供应链情报和基础设施追踪。
-
-
-
-- **[Picterra](https://picterra.ch/)**
-
-  地理空间 AI 平台，用于检测卫星和航空影像中的物体和变化。无需代码即可训练模型，适用于基础设施监测、农业和环境分析。
-
-
-
-- **[EOS Data Analytics](https://eos.com/)**
-
-  卫星数据分析平台，专注于农业、林业和环境监测。提供作物健康监测、产量预测和土地覆盖分类。
-
-
-
-- **[Satellogic Insights](https://satellogic.com/)**
-
-  高频卫星图像和分析服务。提供每日重访能力，用于变化检测和环境监测应用。
-
-
-
-- **[SkyWatch](https://skywatch.com/)**
-
-  地球观测数据平台，提供卫星影像 API 和数据分析服务。简化了从多个供应商获取影像的流程。
-
-
-
-- **[Planet Insights](https://www.planet.com/)**
-
-  Planet 公司的分析平台，基于其每日卫星图像星座提供变化检测、植被监测和物体检测服务。
-
-
-
-- **[SpaceKnow](https://spaceknow.com/)**
-
-  卫星图像分析平台，专注于经济指标、基础设施监测和异常检测。
-
-
-
-- **[EarthDaily Analytics](https://earthdaily.com/)**
-
-  地球观测分析平台，提供每日卫星图像处理和分析服务，覆盖农业、环境和基础设施领域。
-
-
-
-## 开源 GitHub 项目
-
-
-
-- **[satellite-ndvi-pipeline](https://github.com/DMN-SOLUTIONS/satellite-ndvi-pipeline)**
-
-  自动化卫星图像处理管道，带 QGIS 插件。从 AWS 开放数据下载免费 Sentinel-2 影像，计算 NDVI（植被）、NDWI（水体）和 NBR（火烧迹地）指数，矢量化为 GeoJSON 多边形，并检测日期之间的变化。支持 QGIS 暗色主题 UI、日期选择器、变化检测标签页和可配置阈值的警报系统。可通过 AWS SAM 部署为 SaaS API（API Gateway + Lambda + S3）。**开源** 。
-
-
-
-- **[gdalcubes](https://github.com/appelmar/gdalcubes)**
-
-  将地球观测图像集合转换为按需数据立方体的 R 包。支持从 STAC 目录或本地文件创建图像集合，执行空间聚合（`aggregate_space`）、时间聚合（`aggregate_time`）和波段选择。支持 Sentinel-1/2、Landsat 等格式。与 Xarray 生态系统集成，适合构建可扩展的 EO 数据立方体工作流。**开源（R 包）** 。
-
-
-
-- **[unbihexium](https://github.com/unbihexium-oss/unbihexium)**
-
-  综合性地球观测分析框架，包含 12 个功能领域：风险与防御（危险分析、海事感知）、增值影像（DSM、DEM、正射校正）、卫星影像特征（立体、全色锐化）、分辨率与元数据 QA、雷达与 SAR（幅度、相位、InSAR）。支持 PyPI/Conda/Docker 安装，GPU 加速（10-50 倍推理速度提升）。提供模型库（检测、分割）和光谱指数模型。CLI 支持模型浏览、训练和推理。**开源** 。
-
-
-
-- **[LIGHT Change Detection](https://github.com/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation)**
-
-  半监督卫星图像变化检测框架，发表于学术论文。在 U-Net 编码器的潜在特征空间中操作，通过无梯度优化方法（CMA-ES、PSO、GA、MCMC）自动学习阈值。仅需 10-15 个标注变化图像即可获得竞争性结果。在 Vaihingen、HRSCD 和 SyntheWorld 数据集上验证。**开源（CC BY-NC-SA 4.0）** 。
-
-
-
-- **[Gaia](https://github.com/alonsoggpablo/gaia_rs)**
-
-  开源工具，用于管理和分析哥白尼 ESA 卫星图像。在哥白尼数据空间生态社区论坛上发布 。
-
-
-
-- **[stac2cube](https://github.com/BaturalpArisoy/stac2cube)**
-
-  可扩展的 Sentinel-2 数据立方体生成包，基于 Xarray 工作流。统一云掩膜（s2cloudless）、配准（AROSICS）和超分辨率（SEN2SR）到单一管道。支持 HPC 集群和本地工作站，提供增量更新能力。**开源（Python 包）** 。
-
-
-
-- **[Brazil Data Cube](https://github.com/brazil-data-cube)**
-
-  巴西国家空间研究院（INPE）开发的地球观测数据立方体项目。包含三个已注册软件系统：**TerraCollect**（土地覆盖样本采集与分析平台）、**WSAS**（Web 样本分析服务，集成时间序列分析方法）、**WCPMS**（Web 作物物候指标服务，计算 EO 数据立方体的物候指标）。支持 PRODES 和 TerraClass 等巴西国家环境监测项目。**开源** 。
-
-
-
-- **[PICANTEO](https://github.com/）**
-
-  模块化遥感变化检测框架。支持建筑检测（二值语义分割）和变化检测（Siamese 架构直接双时相输入）。提供基于 MA-Net 骨干的 UNet 基线模型，在 BDA 数据集上训练，优化跨传感器 VHR 建筑分割鲁棒性。**开源** 。
-
-
-
-### 其他强开源选项
-
-
-
-- **数据获取与处理**：**eoreader**（传感器无关的遥感 Python 库，支持光学和 SAR 传感器）、**raster4ml**（机器学习地理空间栅格处理库）。
-
-- **数据立方体**：**gdalcubes**（R 包，按需数据立方体）、**stac2cube**（Python，Sentinel-2 数据立方体）。
-
-- **变化检测**：**LIGHT**（半监督，无梯度优化）、**PICANTEO**（模块化框架）。
-
-- **数据源**：**Copernicus Data Space Ecosystem**（免费开放 Sentinel 数据访问，34 PB+ 存档）、**NASA Earthdata**（EarthData Search、AppEEARS、LP DAAC）。
-
-
-
-**构建自定义系统的框架**：结合 **satellite-ndvi-pipeline** 或 **gdalcubes** 进行核心图像处理，**LIGHT** 或 **PICANTEO** 进行变化检测，**stac2cube** 构建可扩展数据立方体，**QGIS** 进行可视化。添加 **Copernicus Data Space Ecosystem** 作为免费数据源，**PostgreSQL/PostGIS** 进行空间数据存储。
-
-
-
-## 如何贡献
-
-
-
-1. Fork 仓库。
-
-2. 在 `README.md` 中添加/编辑条目（遵循现有格式）。
-
-3. 包含：名称、链接、1-2 句描述，以及是 SaaS 还是开源。
-
-4. 提交 PR 并附简短说明。
-
-
-
-如果你觉得这个仓库有用，请点星！
-
-
-
-## 免责声明
-
-
-
-- 这是一个**社区精选**列表——并非详尽无遗，也不构成认可。
-
-- 地球观测分析平台处理可能敏感的位置和环境数据；确保遵守相关数据许可和隐私法规。
-
-- 自托管开源解决方案需要适当的计算资源（GPU 加速可选但推荐）、存储基础设施和持续维护。
-
-
+# Awesome Earth Observation Analytics 🛰️🌍
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Earth Observation Analytics Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square&logo=github" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square&logo=github" alt="GitHub forks"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square" alt="GitHub issues"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Earth-Observation-Analytics/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Earth-Observation-Analytics?style=flat-square" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+<p align="center">
+  <b>A curated list of top Earth Observation (EO) SaaS platforms, satellite imagery analysis tools, AI/ML change detection engines, and open-source geospatial repositories.</b>
+</p>
+
+<p align="center">
+  <a href="README.md">English 🇬🇧</a> | <a href="README_zh.md">中文 🇨🇳</a>
+</p>
 
 ---
 
+## 📌 Overview
 
+The **Earth Observation (EO) & Remote Sensing Analytics** market is currently valued at approximately **$5.2 Billion USD** and is projected to expand to over **$11.8 Billion USD by 2032** (CAGR ~9.5%). 
 
-**为遥感分析师、环境科学家、地理空间开发者和农业技术团队打造。**
+The sector is **moderately fragmented**: commercial high-resolution data collection and satellite constellations are concentrated among a few heavyweights (e.g., Planet Labs, Maxar, Spire), whereas the analytics, machine learning processing, and downstream application layer remains fragmented with specialized SaaS providers and custom open-source solutions.
 
-让地球观测分析更开放、透明、可扩展。
+This repository tracks top commercial **SaaS platforms** and **open-source frameworks** empowering analysts, developers, and researchers to process satellite imagery, monitor vegetation (NDVI), perform bi-temporal change detection, and build scalable geospatial data cubes.
+
+---
+
+## 📑 Table of Contents
+
+- [☁️ SaaS & Commercial Platforms](#️-saas--commercial-platforms)
+- [🔓 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🛠️ Additional Open-Source & Data Options](#️-additional-open-source--data-options)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [❤️ Support & Sponsorship](#️-support--sponsorship)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#️-disclaimer)
+
+---
+
+## ☁️ SaaS & Commercial Platforms
+
+Commercial Earth Observation platforms categorized by corporate scale (revenue/valuation), featuring explicit pricing and free tier trial limits.
+
+| Company / Platform | Market Scale (Revenue / Valuation) | Free Tier / Trial Limit | Pricing Model & Starting Cost | Key Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Planet Insights](https://www.planet.com/)** 🛰️ | **~$390M Revenue / ~$5.9B Valuation** (Public: NYSE PL) | Free tier available via Planet Education & Research Program (limited to 5,000 sq km/month for researchers); 14-day free trial | Commercial developer pricing starts at **~$500/month** or quota custom contracts | Daily global satellite constellation imagery, change detection & object tracking |
+| **[Descartes Labs](https://descarteslabs.com/)** 🌲 | **Acquired by EarthDaily Analytics** (Est. Revenue ~$50M+) | No standard free tier; Enterprise demo available upon request | Custom enterprise contracts starting at **~$25,000/year** | Planetary-scale geospatial ML & multi-sensor data fusion for agriculture/forestry |
+| **[Orbital Insight](https://orbitalinsight.com/)** 🏭 | **Est. Revenue ~$44M** (Acquired by Privateer Space in 2024) | No permanent free tier; 14-day enterprise trial on request | Enterprise platform subscriptions starting at **~$1,000/month** | AI geospatial analytics for supply chain, economic tracking & asset monitoring |
+| **[EOS Data Analytics](https://eos.com/)** 🌾 | **Est. Revenue ~$18.3M** | Free plan available (Up to 3 fields / 10 hectares limit in EOS Crop Monitoring) | EOS Crop Monitoring paid plans start at **$20/month** ($0.15/ha/year) | Agricultural satellite analytics, crop health, yield prediction & land cover |
+| **[UP42](https://up42.com/)** 🛒 | **Est. Revenue ~$10M** (Series A funded) | 10,000 free processing credits (~€100 value) upon account registration | Credit-based pay-as-you-go model starting at **€0.01 per credit** (Min order thresholds apply) | Earth Observation developer marketplace, satellite imagery APIs & processing blocks |
+| **[SkyWatch](https://skywatch.com/)** 🛰️ | **Est. Revenue ~$8M** (Total funding ~$34M) | Free account sign-up with $50 developer data credits for testing | EarthCache API pay-as-you-go starting at **~$2.00 per sq km** (VHR data) | Single API to aggregate and purchase satellite imagery across multiple vendors |
+| **[Satellogic Insights](https://satellogic.com/)** 🌍 | **Est. Revenue ~$6.5M** (Public: NASDAQ SATL) | No standard free tier; Demo access upon request | Tasking and imagery services starting at **~$3.50 per sq km** | High-frequency sub-meter satellite imagery constellation & change analytics |
+| **[Picterra](https://picterra.ch/)** 🤖 | **Est. Revenue ~$3.5M** (Total funding ~$9.6M) | Free trial plan available (up to 50 detector runs & 500 MB storage limit) | Paid commercial plans start at **$150/month** (Personal / Small Business) | Geospatial AI platform for custom object detection & no-code ML model training |
+
+---
+
+## 🔓 Open-Source GitHub Projects
+
+Sorted by **GitHub Star Count** (Descending). Click on the star badge beside any repository to inspect its stargazers.
+
+| Repository | Stars | Description | Focus Area |
+| :--- | :---: | :--- | :--- |
+| **[eolearn](https://github.com/sentinel-hub/eo-learn)** 🐍 | [<img src="https://img.shields.io/github/stars/sentinel-hub/eo-learn?style=social&color=white" alt="eolearn stars"/>](https://github.com/sentinel-hub/eo-learn/stargazers) | Earth observation processing framework for machine learning in Python using Sentinel-Hub. | Data Processing & ML |
+| **[rasterio](https://github.com/rasterio/rasterio)** 🗺️ | [<img src="https://img.shields.io/github/stars/rasterio/rasterio?style=social&color=white" alt="rasterio stars"/>](https://github.com/rasterio/rasterio/stargazers) | Fast geospatial raster I/O library for Python built on top of GDAL binaries. | Raster I/O & GIS |
+| **[torchgeo](https://github.com/microsoft/torchgeo)** 🔥 | [<img src="https://img.shields.io/github/stars/microsoft/torchgeo?style=social&color=white" alt="torchgeo stars"/>](https://github.com/microsoft/torchgeo/stargazers) | PyTorch domain library providing datasets, transforms, and models for geospatial data. | Deep Learning & PyTorch |
+| **[pystac](https://github.com/stac-utils/pystac)** 🗂️ | [<img src="https://img.shields.io/github/stars/stac-utils/pystac?style=social&color=white" alt="pystac stars"/>](https://github.com/stac-utils/pystac/stargazers) | Python library for working with SpatioTemporal Asset Catalog (STAC) metadata. | STAC & Metadata |
+| **[gdalcubes](https://github.com/appelmar/gdalcubes)** 🧊 | [<img src="https://img.shields.io/github/stars/appelmar/gdalcubes?style=social&color=white" alt="gdalcubes stars"/>](https://github.com/appelmar/gdalcubes/stargazers) | Heavy-duty R library & C++ engine to process Earth observation image collections as on-demand data cubes. | Data Cubes & R |
+| **[eoreader](https://github.com/sertit/eoreader)** 📖 | [<img src="https://img.shields.io/github/stars/sertit/eoreader?style=social&color=white" alt="eoreader stars"/>](https://github.com/sertit/eoreader/stargazers) | Open-source, sensor-agnostic Python library simplifying the load of optical and SAR satellite imagery. | Multi-Sensor I/O |
+| **[stac2cube](https://github.com/BaturalpArisoy/stac2cube)** 📊 | [<img src="https://img.shields.io/github/stars/BaturalpArisoy/stac2cube?style=social&color=white" alt="stac2cube stars"/>](https://github.com/BaturalpArisoy/stac2cube/stargazers) | Scalable Sentinel-2 Xarray data cube generator featuring cloud masking (s2cloudless) & super-resolution. | Data Cubes & Xarray |
+| **[LIGHT Change Detection](https://github.com/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation)** 💡 | [<img src="https://img.shields.io/github/stars/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation?style=social&color=white" alt="LIGHT stars"/>](https://github.com/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation/stargazers) | Semi-supervised latent space satellite image change detection via gradient-free optimization. | Change Detection |
+| **[satellite-ndvi-pipeline](https://github.com/DMN-SOLUTIONS/satellite-ndvi-pipeline)** 🛰️ | [<img src="https://img.shields.io/github/stars/DMN-SOLUTIONS/satellite-ndvi-pipeline?style=social&color=white" alt="satellite-ndvi-pipeline stars"/>](https://github.com/DMN-SOLUTIONS/satellite-ndvi-pipeline/stargazers) | Automated Sentinel-2 NDVI/NDWI pipeline with QGIS plugin & AWS SAM serverless cloud API backend. | NDVI Pipeline & QGIS |
+| **[unbihexium](https://github.com/unbihexium-oss/unbihexium)** 🛡️ | [<img src="https://img.shields.io/github/stars/unbihexium-oss/unbihexium?style=social&color=white" alt="unbihexium stars"/>](https://github.com/unbihexium-oss/unbihexium/stargazers) | Modular EO analytics suite covering 12 domains: SAR/radar processing, DEM, stereo features & GPU inference. | SAR & Analytics Suite |
+| **[Gaia](https://github.com/alonsoggpablo/gaia_rs)** 🌍 | [<img src="https://img.shields.io/github/stars/alonsoggpablo/gaia_rs?style=social&color=white" alt="Gaia stars"/>](https://github.com/alonsoggpablo/gaia_rs/stargazers) | Open-source utility tool for retrieving, managing, and inspecting Copernicus ESA satellite data. | ESA Data Management |
+| **[PICANTEO](https://github.com/Pavlo-Andrianatos/PICANTEO)** 🏛️ | [<img src="https://img.shields.io/github/stars/Pavlo-Andrianatos/PICANTEO?style=social&color=white" alt="PICANTEO stars"/>](https://github.com/Pavlo-Andrianatos/PICANTEO/stargazers) | Modular bi-temporal remote sensing building & change detection framework using MA-Net backbones. | Bi-Temporal Segmentation |
+
+---
+
+## 🛠️ Additional Open-Source & Data Options
+
+- **Data Acquisition & Raster Tools**: 
+  - **[Rasterio](https://github.com/rasterio/rasterio)** - Fast Python library for raster data processing.
+  - **[eoreader](https://github.com/sertit/eoreader)** - Open-source sensor-agnostic remote sensing library.
+  - **[raster4ml](https://github.com/crewes/raster4ml)** - Geospatial raster processing designed for ML workflows.
+- **Data Cube Processing**: 
+  - **[gdalcubes](https://github.com/appelmar/gdalcubes)** - On-demand data cube engine for R/C++.
+  - **[stac2cube](https://github.com/BaturalpArisoy/stac2cube)** - Python Sentinel-2 Xarray data cube generator.
+- **Deep Learning Frameworks**: 
+  - **[TorchGeo](https://github.com/microsoft/torchgeo)** - PyTorch domain extension for remote sensing data.
+  - **[eo-learn](https://github.com/sentinel-hub/eo-learn)** - Machine learning framework for Earth observation data.
+- **Free Open Data Sources**:
+  - **[Copernicus Data Space Ecosystem](https://dataspace.copernicus.eu/)** - Free open access to Sentinel-1, Sentinel-2, Sentinel-3 data (34 PB+ archive).
+  - **[NASA Earthdata](https://earthdata.nasa.gov/)** - LP DAAC, AppEEARS, Landsat, and MODIS open archive access.
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are welcome and appreciated! Follow these steps to submit a addition or correction:
+
+1. Fork this repository.
+2. Edit `README.md` or `README_zh.md` following the table formatting.
+3. Ensure entries include explicit links, factual details, star counts, and clear descriptions.
+4. Submit a Pull Request with a brief summary of your updates.
+
+---
+
+## ❤️ Support & Sponsorship
+
+If you find this repository helpful for your geospatial research, remote sensing project, or agritech business, please consider showing your support:
+
+- 🌟 **Star** this repository on GitHub!
+- 🔀 **Fork** it to keep a copy or add your custom pipeline tools.
+- 📢 **Share** with your network, colleagues, or geospatial community on Twitter/X, LinkedIn, and Reddit.
+- ☕ **Buy me a coffee / Sponsor**: Support ongoing maintenance via [GitHub Sponsors](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Earth-Observation-Analytics&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Earth-Observation-Analytics&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for educational and reference purposes; it does not constitute official commercial endorsement.
+- Remote sensing & Earth Observation data may contain location-sensitive information. Always comply with relevant data licensing terms, privacy standards, and local regulations.
+- Self-hosted open-source software requires dedicated compute resources (GPU acceleration recommended) and ongoing infrastructure maintenance.
+
+---
+
+<p align="center">
+  <b>Made with ❤️ for Remote Sensing Analysts, Geospatial Software Engineers &amp; Data Scientists.</b>
+</p>
