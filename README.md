@@ -78,8 +78,6 @@ Sorted by **GitHub Stars_Count** (Descending). Click on the Stars_Badge beside a
 | **[LIGHT Change Detection](https://github.com/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation)** 💡 | [<img src="https://img.shields.io/github/stars/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation?style=social&color=white" alt="LIGHT stars"/>](https://github.com/Pavlo-Andrianatos/LIGHT-Latent-space-change-detectIon-via-Gradient-free-tHreshold-opTimisation/stargazers) | Semi-supervised latent space satellite image change detection via gradient-free optimization. | Change Detection |
 | **[satellite-ndvi-pipeline](https://github.com/DMN-SOLUTIONS/satellite-ndvi-pipeline)** 🛰️ | [<img src="https://img.shields.io/github/stars/DMN-SOLUTIONS/satellite-ndvi-pipeline?style=social&color=white" alt="satellite-ndvi-pipeline stars"/>](https://github.com/DMN-SOLUTIONS/satellite-ndvi-pipeline/stargazers) | Automated Sentinel-2 NDVI/NDWI pipeline with QGIS plugin & AWS SAM serverless cloud API backend. | NDVI Pipeline & QGIS |
 | **[unbihexium](https://github.com/unbihexium-oss/unbihexium)** 🛡️ | [<img src="https://img.shields.io/github/stars/unbihexium-oss/unbihexium?style=social&color=white" alt="unbihexium stars"/>](https://github.com/unbihexium-oss/unbihexium/stargazers) | Modular EO analytics suite covering 12 domains: SAR/radar processing, DEM, stereo features & GPU inference. | SAR & Analytics Suite |
-| **[Gaia](https://github.com/alonsoggpablo/gaia_rs)** 🌍 | [<img src="https://img.shields.io/github/stars/alonsoggpablo/gaia_rs?style=social&color=white" alt="Gaia stars"/>](https://github.com/alonsoggpablo/gaia_rs/stargazers) | Open-source utility tool for retrieving, managing, and inspecting Copernicus ESA satellite data. | ESA Data Management |
-| **[PICANTEO](https://github.com/Pavlo-Andrianatos/PICANTEO)** 🏛️ | [<img src="https://img.shields.io/github/stars/Pavlo-Andrianatos/PICANTEO?style=social&color=white" alt="PICANTEO stars"/>](https://github.com/Pavlo-Andrianatos/PICANTEO/stargazers) | Modular bi-temporal remote sensing building & change detection framework using MA-Net backbones. | Bi-Temporal Segmentation |
 
 ---
 
@@ -88,7 +86,6 @@ Sorted by **GitHub Stars_Count** (Descending). Click on the Stars_Badge beside a
 - **Data Acquisition & Raster Tools**: 
   - **[Rasterio](https://github.com/rasterio/rasterio)** - Fast Python library for raster data processing.
   - **[eoreader](https://github.com/sertit/eoreader)** - Open-source sensor-agnostic remote sensing library.
-  - **[raster4ml](https://github.com/crewes/raster4ml)** - Geospatial raster processing designed for ML workflows.
 - **Data Cube Processing**: 
   - **[gdalcubes](https://github.com/appelmar/gdalcubes)** - On-demand data cube engine for R/C++.
   - **[stac2cube](https://github.com/BaturalpArisoy/stac2cube)** - Python Sentinel-2 Xarray data cube generator.
